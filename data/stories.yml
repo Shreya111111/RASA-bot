@@ -1,0 +1,72 @@
+version: "2.0"
+
+stories:
+  - story: Greet and recommend destination
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: ask_destination
+      - action: utter_ask_destination
+
+  - story: User asks for travel recommendations
+    steps:
+      - intent: ask_travel_season
+      - action: utter_ask_travel_season
+      - intent: travel_recommendations
+      - action: utter_travel_recommendations
+
+  - story: User books a flight
+    steps:
+      - intent: ask_destination
+      - action: utter_ask_destination
+      - intent: ask_date
+      - action: utter_ask_date
+      - intent: book_flight
+      - action: utter_book_flight_confirmation
+
+  - story: User books a hotel
+    steps:
+      - intent: ask_destination
+      - action: utter_ask_destination
+      - intent: ask_date
+      - action: utter_ask_date
+      - intent: book_hotel
+      - action: utter_book_hotel_confirmation
+
+  - story: User inquires about local cuisine
+    steps:
+      - intent: ask_cuisine_type
+      - action: utter_ask_cuisine_type
+      - intent: local_cuisine
+      - action: utter_local_cuisine_recommendation
+
+  - story: User asks for travel tips
+    steps:
+      - intent: travel_tips
+      - action: utter_travel_tips
+
+  - story: User asks for weather update
+    steps:
+      - intent: ask_destination
+      - action: utter_ask_destination
+      - intent: weather_update
+      - action: utter_weather_update
+
+  - story: User asks about transportation options
+    steps:
+      - intent: ask_destination
+      - action: utter_ask_destination
+      - intent: transportation_options
+      - action: utter_transportation_options
+
+  - story: User seeks seasonal information
+    steps:
+      - intent: ask_destination
+      - action: utter_ask_destination
+      - intent: seasonal_information
+      - action: utter_seasonal_information
+
+  - story: User inquires about customer support
+    steps:
+      - intent: customer_support
+      - action: utter_customer_support

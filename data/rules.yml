@@ -1,0 +1,102 @@
+version: "2.0"
+
+rules:
+  - rule: Greet user
+    steps:
+      - intent: greet
+      - action: utter_greet
+
+  - rule: Cheer up user
+    steps:
+      - intent: cheer_up
+      - action: utter_cheer_up
+
+  - rule: Check if the user is satisfied
+    steps:
+      - intent: did_that_help
+      - action: utter_did_that_help
+
+  - rule: Respond to a happy user
+    steps:
+      - intent: happy
+      - action: utter_happy
+
+  - rule: Say goodbye to the user
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - rule: Provide information about the bot
+    steps:
+      - intent: iamabot
+      - action: utter_iamabot
+
+  - rule: Ask the user about their travel destination
+    steps:
+      - intent: ask_destination
+      - action: utter_ask_destination
+
+  - rule: Ask the user about their preferred travel date
+    steps:
+      - intent: ask_date
+      - action: utter_ask_date
+
+  - rule: Ask the user about their travel budget
+    steps:
+      - intent: ask_budget
+      - action: utter_ask_budget
+
+  - rule: Ask the user about their preferred cuisine type
+    steps:
+      - intent: ask_cuisine_type
+      - action: utter_ask_cuisine_type
+
+  - rule: Ask the user about their preferred travel season
+    steps:
+      - intent: ask_travel_season
+      - action: utter_ask_travel_season
+
+  - rule: Confirm flight booking
+    steps:
+      - intent: book_flight_confirmation
+      - action: utter_book_flight_confirmation
+
+  - rule: Confirm hotel reservation
+    steps:
+      - intent: book_hotel_confirmation
+      - action: utter_book_hotel_confirmation
+
+  - rule: Provide travel recommendations
+    steps:
+      - intent: travel_recommendations
+      - action: utter_travel_recommendations
+
+  - rule: Provide weather update
+    steps:
+      - intent: weather_update
+      - action: utter_weather_update
+
+  - rule: Provide transportation options
+    steps:
+      - intent: transportation_options
+      - action: utter_transportation_options
+
+  - rule: Provide travel tips
+    steps:
+      - intent: travel_tips
+      - action: utter_travel_tips
+
+  - rule: Recommend local cuisine
+    steps:
+      - intent: local_cuisine_recommendation
+      - action: utter_local_cuisine_recommendation
+
+  - rule: Provide seasonal information
+    steps:
+      - intent: seasonal_information
+      - action: utter_seasonal_information
+
+  - rule: Provide customer support information
+    steps:
+      - intent: customer_support
+      - action: utter_customer_support

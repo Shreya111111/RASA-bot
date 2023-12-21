@@ -1,0 +1,108 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - book_flight
+  - book_hotel
+  - travel_recommendations
+  - weather_update
+  - transportation_options
+  - travel_tips
+  - local_cuisine
+  - seasonal_information
+  - customer_support
+
+entities:
+  - destination:
+      examples: |
+        - Paris
+        - New York
+        - Tokyo
+  - date:
+      examples: |
+        - tomorrow
+        - next week
+        - May 2023
+  - budget:
+      examples: |
+        - luxury
+        - moderate
+        - budget-friendly
+  - cuisine_type:
+      examples: |
+        - Italian
+        - Asian
+        - Mexican
+  - travel_season:
+      examples: |
+        - summer
+        - winter
+        - monsoon
+
+responses:
+  utter_greet:
+  - text: "Hello! Welcome to our travel assistance. How can I help you today?"
+
+  utter_cheer_up:
+  - text: "Feeling a bit low? Here's a beautiful travel destination to lift your spirits:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "I hope that information was helpful. Is there anything else you'd like to know?"
+
+  utter_happy:
+  - text: "Great to hear that you're satisfied! If you have more questions, feel free to ask."
+
+  utter_goodbye:
+  - text: "Goodbye! Safe travels, and don't hesitate to return if you need assistance."
+
+  utter_iamabot:
+  - text: "I am a travel bot, powered by Rasa. I'm here to assist you with all your travel-related queries."
+
+  utter_ask_destination:
+  - text: "Where are you planning to travel? Please provide the destination, and I'll offer some suggestions."
+
+  utter_ask_date:
+  - text: "When do you plan to travel? Knowing the travel date helps me provide more accurate information."
+
+  utter_ask_budget:
+  - text: "Do you have a specific budget in mind for your trip? Knowing your budget allows me to recommend suitable options."
+
+  utter_ask_cuisine_type:
+  - text: "Are you interested in any particular cuisine? Let me know, and I can suggest some fantastic dining options."
+
+  utter_ask_travel_season:
+  - text: "Are you planning your trip for a specific season? Knowing the travel season helps me offer relevant recommendations."
+
+  utter_book_flight_confirmation:
+  - text: "Great choice! Your flight to [destination] on [date] has been booked. Have a wonderful journey!"
+
+  utter_book_hotel_confirmation:
+  - text: "Your hotel reservation in [destination] from [check-in date] to [check-out date] is confirmed. Enjoy your stay!"
+
+  utter_travel_recommendations:
+  - text: "Based on your preferences, I recommend visiting [recommended destination]. It offers [attractions] and is known for [unique features]."
+
+  utter_weather_update:
+  - text: "The weather in [destination] during [date] is expected to be [forecast]. Make sure to pack accordingly!"
+
+  utter_transportation_options:
+  - text: "For transportation in [destination], you can use [options], including [public transport, car rentals, etc.]."
+
+  utter_travel_tips:
+  - text: "Here are some travel tips for [destination]: [tips]."
+
+  utter_local_cuisine_recommendation:
+  - text: "If you enjoy [cuisine_type], I recommend trying [local dishes] in [destination]. They are a local delicacy!"
+
+  utter_seasonal_information:
+  - text: "The best time to visit [destination] is during [season], when you can experience [events/activities]."
+
+  utter_customer_support:
+  - text: "If you have any issues or questions, our customer support team is available 24/7. You can reach them at [contact information]."

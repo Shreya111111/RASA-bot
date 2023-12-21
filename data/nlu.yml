@@ -1,0 +1,314 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - Hello
+    - Hi
+    - Hey
+    - Greetings
+    - Good day
+    - Hi there
+    - What's up?
+    - Howdy
+    - Aloha
+    - Welcome
+
+- intent: cheer_up
+  examples: |
+    - I'm feeling sad
+    - Cheer me up
+    - Make me happy
+    - Feeling down
+    - I need some cheering
+    - Can you make me smile?
+    - Lift my spirits
+    - Feeling blue
+    - In need of a pick-me-up
+    - Can you brighten my day?
+
+- intent: did_that_help
+  examples: |
+    - Did that help
+    - Was that useful
+    - Did you assist me
+    - Did I get the information I needed?
+    - Was the advice helpful
+    - Did you solve my problem
+    - Was that what I was looking for
+    - Did you provide the right information
+    - Did I find what I was seeking
+    - Was your guidance beneficial
+
+- intent: happy
+  examples: |
+    - I'm happy
+    - Feeling great
+    - Satisfied
+    - Delighted
+    - Pleased with your help
+    - Overjoyed
+    - Ecstatic
+    - Thrilled
+    - Content
+    - Elated
+
+- intent: goodbye
+  examples: |
+    - Goodbye
+    - Farewell
+    - See you later
+    - Bye
+    - Catch you later
+    - Until next time
+    - Take care
+    - Adios
+    - So long
+    - Have a great day
+
+- intent: iamabot
+  examples: |
+    - Are you a bot
+    - Who are you
+    - Bot information
+    - Tell me about yourself
+    - Explain your identity
+    - What kind of entity are you
+    - Are you a human or a machine
+    - What's your purpose
+    - Are you real
+    - What are you?
+
+- intent: ask_destination
+  examples: |
+    - Where should I travel
+    - Suggest a destination
+    - Recommend a place to visit
+    - What's a good travel spot?
+    - Where can I go for a vacation?
+    - Any suggestions on where to travel
+    - Tell me about popular travel destinations
+    - I need ideas for a holiday destination
+    - Recommend some exciting places to visit
+    - Where do you suggest I go for my next trip?
+
+- intent: ask_date
+  examples: |
+    - When can I travel
+    - Best time to visit
+    - Travel date suggestion
+    - When is the ideal time to plan a trip?
+    - Any recommendations for travel dates?
+    - What's the perfect time to travel
+    - Suggest a suitable date for my trip
+    - Tell me when I should plan my vacation
+    - Advise me on the best time to visit [destination]
+    - What's the most favorable date for travel?
+
+- intent: ask_budget
+  examples: |
+    - What's my budget
+    - Budget for travel
+    - Affordable options
+    - Give me budget-friendly suggestions
+    - Can you recommend something within my budget?
+    - Help me plan within my financial constraints
+    - What are the economical choices for my trip
+    - Suggest options that fit my budget
+    - Provide me with cost-effective travel ideas
+    - How can I plan a trip on a tight budget?
+
+- intent: ask_cuisine_type
+  examples: |
+    - Recommend cuisine
+    - Best food options
+    - Cuisine suggestions
+    - What type of food is popular in [destination]?
+    - Any local cuisines I should try?
+    - Suggest a cuisine for my upcoming trip
+    - What are the famous dishes in [destination]
+    - Tell me about the local food specialties
+    - Recommend some delicious dishes in [destination]
+    - Can you suggest cuisines based on my taste preferences?
+
+- intent: ask_travel_season
+  examples: |
+    - Best season to travel
+    - Ideal travel season
+    - Recommended time to visit
+    - When is the perfect time to plan a trip?
+    - Any specific season you'd recommend?
+    - Advise me on the optimal travel season
+    - Tell me when I should visit [destination]
+    - What's the most favorable time to travel
+    - Suggest a season for my trip
+    - When is the peak season for tourism in [destination]?
+
+- intent: book_flight_confirmation
+  examples: |
+    - Confirm flight booking
+    - Flight reservation confirmation
+    - Flight booked successfully
+    - My flight is booked, right?
+    - Did I successfully reserve a flight?
+    - Tell me my flight is confirmed
+    - Confirm my flight reservation
+    - Verify my flight is scheduled
+    - I booked a flight, is it confirmed?
+    - Ensure my flight details are in order
+
+- intent: book_hotel_confirmation
+  examples: |
+    - Confirm hotel reservation
+    - Hotel booking confirmation
+    - Hotel room booked
+    - Is my hotel reservation confirmed?
+    - Did I successfully book a hotel room?
+    - Tell me my hotel booking is confirmed
+    - Confirm my hotel stay
+    - Did my hotel reservation go through?
+    - Verify my hotel booking details
+    - Ensure my hotel room is reserved
+
+- intent: travel_recommendations
+  examples: |
+    - Destination recommendations
+    - Places to visit suggestion
+    - Where to go
+    - Give me some travel ideas
+    - What are some interesting places to explore?
+    - Suggest me some vacation spots
+    - Recommend unique travel destinations
+    - Tell me about offbeat travel locations
+    - Advise me on lesser-known travel spots
+    - Share some exciting places to visit
+
+Certainly! Here are additional examples for each of the provided intents:
+
+- intent: ask_travel_season
+  examples: |
+    - What's the best time to plan a trip?
+    - Ideal season for travel
+    - When should I go on vacation?
+    - Any specific time you suggest for a holiday?
+    - Tell me the perfect season to visit [destination]
+    - Recommend a suitable time for a getaway
+    - When is the peak travel season?
+    - Advise me on the optimal travel period
+    - Suggest a season for my upcoming trip
+    - Share your thoughts on the right time to travel
+
+- intent: book_flight_confirmation
+  examples: |
+    - Confirm my flight reservation, please
+    - Verify that my flight is secured
+    - Is my booked flight confirmed?
+    - Double-check my flight details
+    - Confirm the reservation of my flight
+    - Can you confirm that my flight is booked?
+    - I want to ensure my flight is confirmed
+    - Check if my flight is successfully booked
+    - Confirm that I've reserved a seat on the flight
+    - Did my flight reservation go through?
+
+- intent: book_hotel_confirmation
+  examples: |
+    - Confirm my hotel booking
+    - Verify my hotel reservation
+    - Check if my hotel room is confirmed
+    - Confirm the booking of my hotel
+    - Is my hotel reservation secured?
+    - Can you ensure my hotel room is booked?
+    - Double-check my hotel reservation details
+    - Confirm that I've successfully booked a hotel room
+    - Verify that my hotel stay is confirmed
+    - Is my hotel room reservation confirmed?
+
+- intent: travel_recommendations
+  examples: |
+    - Suggest some must-visit destinations
+    - Give me recommendations on places to explore
+    - Where can I go for an unforgettable experience?
+    - Recommend unique travel spots
+    - Share your top travel destination suggestions
+    - What are some hidden gems for tourists?
+    - Provide me with offbeat travel recommendations
+    - Recommend places that offer a memorable experience
+    - Tell me about lesser-known but amazing destinations
+    - Share your favorite travel destinations with me
+
+- intent: weather_update
+  examples: |
+    - Give me the latest weather forecast
+    - Can you provide an update on the weather?
+    - How's the weather looking for my trip?
+    - Inform me about the climate during my journey
+    - What's the current weather situation in [destination]?
+    - Tell me about the expected weather conditions on [date]
+    - Provide me with a weather update for [destination]
+    - What kind of weather should I expect during my travel?
+    - Share the forecast for [destination] on [date]
+    - Update me on the atmospheric conditions for my trip
+
+- intent: transportation_options
+  examples: |
+    - Tell me about the transportation choices in [destination]
+    - What are the available travel options in [destination]?
+    - Provide information on how to get around in [destination]
+    - Suggest different modes of transportation in [destination]
+    - What transportation services are there in [destination]?
+    - Give me details on public transport in [destination]
+    - Advise me on transportation alternatives in [destination]
+    - Share options for getting from place to place in [destination]
+    - What's the most convenient way to travel within [destination]?
+    - Tell me about transportation services like buses and trains in [destination]
+
+- intent: travel_tips
+  examples: |
+    - Share some pro tips for travelers
+    - What are your best travel tips?
+    - Provide me with useful advice for my trip
+    - Share some insider travel hacks
+    - Offer tips for a smooth travel experience
+    - Share your recommendations for hassle-free travel
+    - Give me some practical travel suggestions
+    - What should I keep in mind while traveling?
+    - Provide me with essential travel advice
+    - Offer some tips for making the most of my journey
+
+- intent: local_cuisine_recommendation
+  examples: |
+    - Recommend some local dishes in [destination]
+    - Where can I find authentic [cuisine_type] food in [destination]?
+    - Tell me about the best local restaurants serving [cuisine_type]
+    - Share your top picks for [cuisine_type] cuisine in [destination]
+    - What are the must-try dishes in [destination]?
+    - Recommend some hidden gems for [cuisine_type] lovers in [destination]
+    - Where can I experience the best local food in [destination]?
+    - Suggest popular [cuisine_type] dishes in [destination]
+    - Tell me about the local delicacies I shouldn't miss in [destination]
+    - What are the specialties of [cuisine_type] in [destination]?
+
+- intent: seasonal_information
+  examples: |
+    - Tell me about seasonal attractions in [destination]
+    - What events are happening during [season] in [destination]?
+    - Share information on activities during [season] in [destination]
+    - What's unique about visiting [destination] during [season]?
+    - Inform me about any festivals or events in [destination] during [season]
+    - Share your insights on the best things to do in [destination] during [season]
+    - Tell me about seasonal festivities in [destination]
+    - Provide details on attractions specific to [season] in [destination]
+    - What activities are popular in [destination] during [season]?
+    - Share some recommendations for enjoying [season] in [destination]
+
+- intent: customer_support
+  examples: |
+    - How do I reach your customer support?
+    - Tell me the contact details for customer support
+    - I need assistance, how can I contact customer support?
+    - What's the customer support hotline number?
+    - Provide information on reaching out to your customer service team
+    - How can I get help from your support team?
+    - Tell me about the process of contacting customer support
+    - I have a problem, what's the best
